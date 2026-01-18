@@ -13,6 +13,8 @@ Expose berlin weather kpis through influxdb and grafana for time‑series analys
 The pipeline uses the open-meteo current weather data api to fetch live measurements for berlin. The api is called via https with parameters specifying location and units
 **https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m**
 
+**youtube link** https://youtu.be/cLPYvHdufmI
+
 The json payload contains:
 **Location:** coord.lat, coord.lon, name (city name).
 Core weather metrics: main.temp, main.humidity, main.pressure, wind.speed, clouds.all, weather[0].description, and timestamp dt in unix utc.
